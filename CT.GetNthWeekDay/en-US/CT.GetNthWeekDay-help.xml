@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-NthWeekday</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>NthWeekday</command:noun>
+      <maml:description>
+        <maml:para>{{Fill in the Synopsis}}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{Fill in the Description}}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-NthWeekday</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="OccurrenceNumber, Number">
+          <maml:name>Ordinal</maml:name>
+          <maml:Description>
+            <maml:para>The ordinal (1st, 2nd, etc.) of the day you would like to get.</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">1st</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">2nd</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">3rd</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">4th</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">5th</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">First</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Second</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Third</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Fourth</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Fifth</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Previous</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Next</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Last</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Current</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">1</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">5</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="Day">
+          <maml:name>WeekDay</maml:name>
+          <maml:Description>
+            <maml:para>The name of the weekday to check for.</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Sunday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Monday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Tuesday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Wednesday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Thursday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Friday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Saturday</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">All</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Month</maml:name>
+          <maml:Description>
+            <maml:para>The month to use when finding the particular date.</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">January</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">February</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">March</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">April</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">May</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">June</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">July</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">August</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">September</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">October</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">November</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">December</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">1</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">5</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">6</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">7</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">8</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">9</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">10</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">11</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">12</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Year</maml:name>
+          <maml:Description>
+            <maml:para>Combined with the month specified when looking for the requested weekday occurrence.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Month</maml:name>
+        <maml:Description>
+          <maml:para>The month to use when finding the particular date.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="OccurrenceNumber, Number">
+        <maml:name>Ordinal</maml:name>
+        <maml:Description>
+          <maml:para>The ordinal (1st, 2nd, etc.) of the day you would like to get.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="Day">
+        <maml:name>WeekDay</maml:name>
+        <maml:Description>
+          <maml:para>The name of the weekday to check for.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Year</maml:name>
+        <maml:Description>
+          <maml:para>Combined with the month specified when looking for the requested weekday occurrence.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.DateTime</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>
