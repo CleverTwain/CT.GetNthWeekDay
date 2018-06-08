@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-NthWeekday
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Gets the Nth occurrence of the specified week day within the month and year provided.
 
 ## SYNTAX
 
@@ -18,16 +18,69 @@ Get-NthWeekday [[-Ordinal] <String>] [[-WeekDay] <String>] [[-Month] <String>] [
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Gets the Nth occurrence of the specified week day within the month and year provided.
+
+Other valid occurrences that can be obtained are:
+* Previous - Returns the previous occurrence of the specified week day.
+* Current - Returns the next occurrence of the specified week day, including today.
+* Next - Returns the next occurrence of the specified week day, excluding today.
+* Last - Returns the last occurrence of the specified week day in the month specified.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\>Get-NthWeekday -Ordinal 1 -WeekDay Monday -Month 1 -Year 2016
+
+    Monday, January 4, 2016
 ```
 
-{{ Add example description here }}
+Find the first Monday in January of 2016
+
+
+### Example 2
+```powershell
+PS C:\>Get-NthWeekday -1 Monday 1 2016
+
+    Monday, January 25, 2016
+```
+
+This command gets the last Monday in January, 2016
+
+### Example 3
+```powershell
+PS C:\>Get-NthWeekday -Ordinal Next -Day Friday March 2007
+
+    WARNING: Specific months and/or years are ignored when finding a specific weekday or the next occurrence of a weekday
+
+    Friday, March 16, 2018
+```
+
+This command finds next Friday.
+
+NOTE - The current month and year is always used when searching for the Next or Every
+        weekday. If they are included in the command, they will be ignored!
+
+### Example 4
+```powershell
+PS C:\>(Get-NthWeekday -Ordinal 2 -WeekDay Wednesday -Month June -Year 2016).AddDays(-1)
+
+    Tuesday, June 7, 2016
+```
+
+This command gets the the Tuesday before the second Wednesday in June 2016
+
+### Example 5
+```powershell
+PS C:\>Get-NthWeekday -Ordinal 2 -WeekDay Tuesday -Month 6 -Year 2016
+
+    Tuesday, June 14, 2016
+```
+
+This command gets the second Tuesday of June 2016
+
+If you compare this to the previous example, you can see that the second Tuesday is actually different than the day before the second Wednesday
+
 
 ## PARAMETERS
 
@@ -106,5 +159,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.DateTime
 
 ## NOTES
+
+If the specified combination is not found, nothing will be returned
 
 ## RELATED LINKS

@@ -79,6 +79,7 @@ function Get-NthWeekday
     [OutputType([datetime])]
     Param
     (
+        # Which occurrence of the day of the week are you looking for?
         [Parameter(
             HelpMessage = 'The ordinal (1st, 2nd, etc.) of the day you would like to get.'
         )]
@@ -87,6 +88,7 @@ function Get-NthWeekday
         [string]
         $Ordinal = 'Current',
 
+        # What day of the week are you looking for?
         [Parameter(
             HelpMessage = 'The name of the weekday to check for.'
         )]
@@ -95,6 +97,7 @@ function Get-NthWeekday
         [string]
         $WeekDay = (Get-Date).DayOfWeek,
 
+        # What month would you like to check?
         [Parameter(
             HelpMessage = 'The month to use when finding the particular date.'
         )]
@@ -102,6 +105,7 @@ function Get-NthWeekday
         [string]
         $Month,
 
+        # What year would you like to check?
         [Parameter(
             HelpMessage = 'Combined with the month specified when looking for the requested weekday occurrence.'
         )]
@@ -117,6 +121,11 @@ function Get-NthWeekday
         $AllOccurrences = @()
         $Return = $null
 
+        <#
+            I do not remember why I had added this, but to fix it, I will need to go through all of my other scripts.
+            The $WeekDay parameter already defaults to the current day of the week, so this will most likely be removed
+                or at least renamed to 'Current'. Again, that depends on if I can find a use case for it.
+        #>
         if ($WeekDay -eq 'All')
         {
             $WeekDay = (Get-Date).DayOfWeek
