@@ -1,0 +1,17 @@
+site_name: CT.GetNthWeekDay Docs
+repo_url: https://github.com/CleverTwain/CT.GetNthWeekDay
+theme: readthedocs
+pages:
+  - Home: index.md
+  - CT.GetNthWeekDay Basics:
+    - What is CT.GetNthWeekDay: about.md
+    - Overview: en-US/CT.GetNthWeekDay.md
+    - Quick Start: Quick-Start-Installation-and-Example.md
+  - Commands:
+    - Get-NthWeekDay: en-US/Get-NthWeekday.md
+  - Examples and Use Cases:
+    - Patch Tuesday: Example-PatchTuesday.md
+    - PlainText: Example-PlainText.md
+    - Minimal: Example-Minimal.md
+    - EventLog: Example-EventLog.md
+  - Acknowledgements: acknowledgements.md
